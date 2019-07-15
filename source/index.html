@@ -6,7 +6,112 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <div class="page-header__logo-wrapper">
+        <a href="#" class="page-header__logo">
+          <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип-Кэт-энеджи" >
+        </a>
+        <a href="#" class="page-header__logo">
+          <img class="page-header__logo logo-name--sm" src="img/logo-mobile-header.svg" width="101" height="18" alt="Логотип-Кэт-энеджи-словами" >
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav_list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="offer">
+        <header class="offer__header">
+          <h1 class="offer__title">Функциональноепитание для котов</h1>
+          <p class="offer__subtitle">Занялся собой? Займись котом!</p>
+        </header>
+          <img class="offer__img" src="#" alt="Кэт-энерджи-с-курицей" >
+          <button class="btn offer__btn">Подобрать программу</button>
+      </section>
+      <section class="program">
+        <h2 class="visually-hidden title">Программы питания</h2>
+        <ul class="program__list">
+          <li class="program__item">
+            <h3 class="program__title program__titile--weight-los">Похудение</h3>
+            <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a href="#" class="program__link">Каталог Slim</a>
+          </li>
+          <li class="program__item">
+            <h3 class="program__title program__titile--weight-gain">Похудение</h3>
+            <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a href="#" class="program__link">Каталог pro</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="instruction">
+        <h2 class="instruction__title title">Как это работает</h2>
+        <ul class="instruction__list">
+          <li class="instruction__item">
+            <p class="instruction__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="instruction__item">
+            <p class="instruction__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово. </p>
+          </li>
+          <li class="instruction__item">
+            <p class="instruction__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="instruction__item">
+            <p class="instruction__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="sample">
+        <header class="sample__header">
+        <h2 class="sample__title title">Живой пример</h2>
+        <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+      </header>
+      <ul class="sample__list">
+        <li class="sample__item">
+          <p class="sample__data">
+              5 кг
+            <p class="sample__data-name">снижение
+                веса</p>
+          </p>
+        </li>
+        <li class="sample__item">
+          <p class="sample__data">
+              60 дней
+            <p class="sample__data-name">затрачено
+                времени</p>
+          </p>
+        </li>
+      </ul>
+      <p class="sample__spent">Затраты на питание: 15 000 руб.</p>
+      <div class="sample__cats-progress">
+        <img src="" alt="Кот-Борис-до" class="sample__cat sample__cat-before">
+        <img src="" alt="Кот-Борис-после" class="sample__cat sample__cat-after">
+      </div>
+
+      <form action="" class="sample__form range">
+        <span class="range__start">Было</span>
+        <input type="range" min="1" max="2" step="1" class="range__button">
+        <span class="range__start">Стало</span>
+      </form>
+
+
+      </section>
+    </main>
 
   </body>
 </html>
