@@ -2,17 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
 
     <header class="page-header">
       <div class="page-header__logo-wrapper">
-        <a href="#" class="page-header__logo">
+        <a href="#" class="page-header__logo-link">
           <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип-Кэт-энеджи" >
         </a>
-        <a href="#" class="page-header__logo">
-          <img class="page-header__logo logo-name--sm" src="img/logo-mobile-header.svg" width="101" height="18" alt="Логотип-Кэт-энеджи-словами" >
+        <a href="#" class="page-header__logo-link">
+          <img class="page-header__logo-name logo-name--sm" src="img/logo-mobile-header.svg" width="101" height="18" alt="Логотип-Кэт-энеджи-словами" >
         </a>
       </div>
       <nav class="main-nav">
@@ -41,7 +43,8 @@
         </header>
           <img class="offer__img" src="#" alt="Кэт-энерджи-с-курицей" >
           <button class="btn offer__btn">Подобрать программу</button>
-      </section>
+      </section> <!-- /.offer -->
+
       <section class="program">
         <h2 class="visually-hidden title">Программы питания</h2>
         <ul class="program__list">
@@ -56,7 +59,7 @@
             <a href="#" class="program__link">Каталог pro</a>
           </li>
         </ul>
-      </section>
+      </section> <!-- /.program -->
 
       <section class="instruction">
         <h2 class="instruction__title title">Как это работает</h2>
@@ -74,7 +77,7 @@
             <p class="instruction__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
-      </section>
+      </section> <!-- /.instruction -->
 
       <section class="sample">
         <header class="sample__header">
@@ -84,34 +87,90 @@
       <ul class="sample__list">
         <li class="sample__item">
           <p class="sample__data">
-              5 кг
-            <p class="sample__data-name">снижение
-                веса</p>
+            5 кг
+            <p class="sample__data-name">
+              снижение веса
+            </p>
           </p>
         </li>
         <li class="sample__item">
           <p class="sample__data">
-              60 дней
-            <p class="sample__data-name">затрачено
-                времени</p>
+            60 дней
+            <p class="sample__data-name">
+              затрачено времени
+            </p>
           </p>
         </li>
       </ul>
       <p class="sample__spent">Затраты на питание: 15 000 руб.</p>
-      <div class="sample__cats-progress">
-        <img src="" alt="Кот-Борис-до" class="sample__cat sample__cat-before">
-        <img src="" alt="Кот-Борис-после" class="sample__cat sample__cat-after">
+      <div class="sample__cats">
+        <img src="" alt="Кот-Борис-до" class="sample__cat sample__cat--before">
+        <img src="" alt="Кот-Борис-после" class="sample__cat sample__cat--after">
       </div>
-
       <form action="" class="sample__form range">
         <span class="range__start">Было</span>
         <input type="range" min="1" max="2" step="1" class="range__button">
         <span class="range__start">Стало</span>
       </form>
+      </section> <!-- /.sample -->
 
+      <footer class="page-footer">
 
-      </section>
+        <section class="page-footer__address address">
+            <div class="address__wrapper">
+              <h4 class="address__title">
+                приглашаем к сотрудничеству дилеров!
+              </h4>
+              <address class="address__coordinates">
+                  ул. Большая Конюшенная, д. 19/8
+                  Санкт-Петербург
+              </address>
+            </div>
+          </section> <!-- /.page-footer__address -->
+
+        <section class="page-footer__map goole-map" id="googleMap">
+          <!-- Каким способом лучше подключить карту? -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6000675744567!2d30.323196699999997!3d59.938778199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy+Dom+N.+A.+Mel&#39;tsera!5e0!3m2!1suk!2s!4v1563166237030!5m2!1suk!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            -->
+          <script>
+            function myMap() {
+              var mapProp= {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+              }
+          </script>
+        </section> <!--/.page-footer__map -->
+
+        <section class="page-footer__contacts">
+          <div class="page-footer__logo logo">
+            <a href="#" class="logo__link">
+              <img class="logo__img-name logo__img-name--big" src="img/logo-mobile-header.svg" width="128" height="24" alt="Логотип-Кэт-энеджи-словами" >
+            </a>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="slocial__item">
+                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <img class="copyright__logo" src="#" alt="HTML-Academy-logo">
+              </a>
+          </div>
+        </section> <!-- /.page-footer__contacts -->
+      </footer>
     </main>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   </body>
 </html>
