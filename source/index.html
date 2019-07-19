@@ -9,14 +9,10 @@
   <body>
 
     <header class="page-header">
-      <div class="page-header__logo-wrapper">
-        <a href="#" class="page-header__logo-link">
-          <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип-Кэт-энеджи" >
-        </a>
-        <a href="#" class="page-header__logo-link">
-          <img class="page-header__logo-name logo-name--sm" src="img/logo-mobile-header.svg" width="101" height="18" alt="Логотип-Кэт-энеджи-словами" >
-        </a>
-      </div>
+      <a href="#" class="page-header__logo-link">
+        <img class="page-header__logo-icon" src="#" width="33" height="38" alt="Логотип Кэт Энеджи" >
+        <img class="page-header__logo-name logo-name logo-name--sm" src="#" width="101" height="18" alt="Логотип Кэт Энеджи словами" >
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -38,42 +34,54 @@
     <main class="page-main">
       <section class="offer">
         <header class="offer__header">
-          <h1 class="offer__title">Функциональноепитание для котов</h1>
+          <h1 class="offer__title">Функциональное питание для котов</h1>
           <p class="offer__subtitle">Занялся собой? Займись котом!</p>
         </header>
-          <img class="offer__img" src="#" alt="Кэт-энерджи-с-курицей" >
-          <button class="btn offer__btn">Подобрать программу</button>
+        <img class="offer__img" src="#" alt="Кэт энерджи с курицей" >
+        <button class="btn offer__btn">Подобрать программу</button>
       </section> <!-- /.offer -->
 
       <section class="program">
-        <h2 class="visually-hidden title">Программы питания</h2>
-        <ul class="program__list">
-          <li class="program__item">
-            <h3 class="program__title program__titile--weight-los">Похудение</h3>
-            <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="#" class="program__link">Каталог Slim</a>
-          </li>
-          <li class="program__item">
-            <h3 class="program__title program__titile--weight-gain">Похудение</h3>
-            <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a href="#" class="program__link">Каталог pro</a>
-          </li>
-        </ul>
+        <h2 class="visually-hidden">Программы питания</h2>
+        <div class="program__wrapper">
+          <article class="program__item program-card">
+            <header class="program-card__header">
+              <svg class="program-card__icon program-card__icon--weight-los"></svg>
+              <h1 class="program-card__title ">Похудение</h1>
+            </header>
+            <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a href="#" class="program-card__link">Каталог Slim</a>
+          </article>
+          <article class="program__item">
+            <header class="program__item program-card">
+              <svg class="program-card__icon program-card__icon--weight-gain"></svg>
+              <h1 class="program-card__title">Похудение</h1>
+            </header>
+            <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a href="#" class="program-card__link">Каталог pro</a>
+          </article>
+        </div>
       </section> <!-- /.program -->
 
       <section class="instruction">
-        <h2 class="instruction__title title">Как это работает</h2>
+        <header class="instruction__header">
+          <h2 class="instruction__title title">Как это работает</h2>
+        </header>
         <ul class="instruction__list">
           <li class="instruction__item">
+            <svg class="instruction__icon instruction__icon--eco"></svg>
             <p class="instruction__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="instruction__item">
+            <svg class="instruction__icon instruction__icon--powder"></svg>
             <p class="instruction__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово. </p>
           </li>
           <li class="instruction__item">
+            <svg class="instruction__icon instruction__icon--replacement"></svg>
             <p class="instruction__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="instruction__item">
+            <svg class="instruction__icon instruction__icon--changes"></svg>
             <p class="instruction__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -81,74 +89,66 @@
 
       <section class="sample">
         <header class="sample__header">
-        <h2 class="sample__title title">Живой пример</h2>
-        <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      </header>
-      <ul class="sample__list">
-        <li class="sample__item">
-          <p class="sample__data">
-            5 кг
-            <span class="sample__data-name">
-              снижение веса
-            </span>
-          </p>
-        </li>
-        <li class="sample__item">
-          <p class="sample__data">
-            60 дней
-            <span class="sample__data-name">
-              затрачено времени
-            </span>
-          </p>
-        </li>
-      </ul>
-      <p class="sample__spent">Затраты на питание: 15 000 руб.</p>
-      <div class="sample__cats">
-        <img src="" alt="Кот-Борис-до" class="sample__cat sample__cat--before">
-        <img src="" alt="Кот-Борис-после" class="sample__cat sample__cat--after">
-      </div>
-      <form action="" class="sample__form range">
-        <span class="range__start">Было</span>
-        <input type="range" min="1" max="2" step="1" class="range__button">
-        <span class="range__start">Стало</span>
-      </form>
+          <h2 class="sample__title title">Живой пример</h2>
+          <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        </header>
+        <ul class="sample__list">
+          <li class="sample__item">
+            <p class="sample__data">
+              5 кг
+              <p class="sample__data-name">
+                снижение веса
+              </p>
+            </p>
+          </li>
+          <li class="sample__item">
+            <p class="sample__data">
+              60 дней
+              <p class="sample__data-name">
+                затрачено времени
+              </p>
+            </p>
+          </li>
+        </ul>
+        <p class="sample__spent">Затраты на питание: 15 000 руб.</p>
+        <article class="sample__wrapper-slider slider">
+          <ul class="sample__list slider__list">
+            <li class="sample__item sample__item--before slider__item">
+                <img src="#" alt="Кот Борис, до" class="sample__cats-photo sample__cats-photo--before">
+            </li>
+            <li class="sample__item sample__item--after slider__item">
+                <img src="#" alt="Кот Борис, после" class="sample__cats-photo sample__cats-photo--after">
+            </li>
+          </ul>
+          <div class="sample__toggle slider__toggle">
+            <span class="slider__before">Было</span>
+            <div class="slider__wrapper-toggle">
+              <button type="button" class="slider__toggle-button">До и после</button>
+            </div>
+            <div class="span slider__after">Стало</div>
+          </div>
+        </article> <!-- /.slider -->
       </section> <!-- /.sample -->
 
       <footer class="page-footer">
-
-        <section class="page-footer__address address">
-            <div class="address__wrapper">
-              <h4 class="address__title">
-                приглашаем к сотрудничеству дилеров!
-              </h4>
-              <address class="address__coordinates">
-                  ул. Большая Конюшенная, д. 19/8
-                  Санкт-Петербург
-              </address>
-            </div>
-          </section> <!-- /.page-footer__address -->
-
-        <section class="page-footer__map goole-map" id="googleMap">
-          <h2 class="visually-hidden title">Карта</h2>
-          <!-- Каким способом лучше подключить карту? -->
-          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6000675744567!2d30.323196699999997!3d59.938778199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy+Dom+N.+A.+Mel&#39;tsera!5e0!3m2!1suk!2s!4v1563166237030!5m2!1suk!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            -->
-          <script>
-            function myMap() {
-              var mapProp= {
-                center:new google.maps.LatLng(51.508742,-0.120850),
-                zoom:5,
-              };
-              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-              }
-          </script>
-        </section> <!--/.page-footer__map -->
-
-        <section class="page-footer__contacts">
-          <h2 class="visually-hidden title">Контакты</h2>
-          <div class="page-footer__logo logo">
-            <a href="#" class="logo__link">
-              <img class="logo__img-name logo__img-name--big" src="img/logo-mobile-header.svg" width="128" height="24" alt="Логотип-Кэт-энеджи-словами" >
+        <div class="page-footer__address address">
+          <div class="address__wrapper">
+            <h3 class="address__title">
+              приглашаем к сотрудничеству дилеров!
+            </h3>
+            <address class="address__coordinates">
+                ул. Большая Конюшенная, д. 19/8
+                Санкт-Петербург
+            </address>
+          </div>
+        </div> <!-- /.page-footer__address -->
+        <div class="page-footer__map goole-map" id="googleMap">
+           <iframe class="google-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6000675744567!2d30.323196699999997!3d59.938778199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy+Dom+N.+A.+Mel&#39;tsera!5e0!3m2!1suk!2s!4v1563166237030!5m2!1suk!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div> <!--/.page-footer__map -->
+        <div class="page-footer__contacts contacts">
+          <div class="contacts__logo">
+            <a href="#" class="contacts__logo-link">
+              <img class="contacts__logo-img logo-name logo-name--big" src="" width="128" height="24" alt="Логотип Кэт энеджи словами" >
             </a>
           </div>
           <div class="page-footer__social social">
@@ -167,12 +167,11 @@
           <div class="page-footer__copyright copyright">
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <img class="copyright__logo" src="#" alt="HTML-Academy-logo">
+                <img class="copyright__logo" src="#" alt="HTML Academy logo">
               </a>
           </div>
-        </section> <!-- /.page-footer__contacts -->
+        </div> <!-- /.page-footer__contacts -->
       </footer>
     </main>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   </body>
 </html>
