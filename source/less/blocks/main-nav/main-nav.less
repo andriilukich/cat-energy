@@ -3,10 +3,12 @@
   width: 100%;
   height: auto;
   padding: 0 -20px;
+
   &--active {
     display: block;
   }
 }
+
 .main-nav_list {
   padding-inline-start: 0;
 
@@ -14,6 +16,7 @@
 
   border-bottom: 1px hsl(0, 0%, 90%) solid;
 }
+
 .main-nav__item {
   padding: 24px 0;
   border-top: 1px hsl(0, 0%, 90%) solid;
@@ -28,12 +31,15 @@
 .main-nav__link {
   color: @text-color-darker;
   text-decoration: none;
+
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   &--active {
     opacity: 1;
     border-bottom: 2px hsl(97, 53%, 47%) solid;
