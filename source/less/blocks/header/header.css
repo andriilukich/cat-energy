@@ -1,7 +1,6 @@
 .page-header {
   width: 100%;
-  height: auto;
-  padding-top: 10px;
+  min-height: 66px;
 }
 .page-header__container {
   display: flex;
@@ -12,12 +11,15 @@
   margin: 0 auto;
 }
 .page-header__logo {
-  padding-left: 20px;
+  padding: 17px 0 17px 20px;
 }
 .main-nav__toggle {
   padding: 0 20px;
   font-size: 0;
   color: transparent;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }
 .main-nav__burger {
   display: none;
