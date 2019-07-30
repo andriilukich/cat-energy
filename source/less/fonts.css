@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Oswald-Regular";
-  src: url("/fonts/Oswald-Regular.eot");
-  src: url("/fonts/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Oswald-Regular.otf") format("opentype"), url("/fonts/Oswald-Regular.svg") format("svg"), url("/fonts/Oswald-Regular.ttf") format("truetype"), url("/fonts/Oswald-Regular.woff") format("woff"), url("/fonts/Oswald-Regular.woff2") format("woff2");
+  src: url("/fonts/oswaldregular.eot");
+  src: url("/fonts/oswaldregular.eot?#iefix") format("embedded-opentype"), url("/fonts/oswaldregular.otf") format("opentype"), url("/fonts/oswaldregular.svg") format("svg"), url("/fonts/oswaldregular.ttf") format("truetype"), url("/fonts/oswaldregular.woff") format("woff"), url("/fonts/oswaldregular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Oswald-Medium";
-  src: url("/fonts/Oswald-Medium.eot");
-  src: url("/fonts/Oswald-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Oswald-Medium.otf") format("opentype"), url("/fonts/Oswald-Medium.svg") format("svg"), url("/fonts/Oswald-Medium.ttf") format("truetype"), url("/fonts/Oswald-Medium.woff") format("woff"), url("/fonts/Oswald-Medium.woff2") format("woff2");
+  src: url("/fonts/oswaldmedium.eot");
+  src: url("/fonts/oswaldmedium.eot?#iefix") format("embedded-opentype"), url("/fonts/oswaldmedium.otf") format("opentype"), url("/fonts/oswaldmedium.svg") format("svg"), url("/fonts/oswaldmedium.ttf") format("truetype"), url("/fonts/oswaldmedium.woff") format("woff"), url("/fonts/oswaldmedium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
