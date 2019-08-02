@@ -3,12 +3,24 @@
   width: 280px;
   padding: 15px 0;
 
+  font-family: @font-main;
   text-align: center;
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
   text-decoration: none;
 
   background-color: @accent-color;
+  border: 0;
+
+  &--card {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: hsl(97, 57%, 43%);
+  }
 
   &:hover {
     background-color: hsl(97, 57%, 43%);
@@ -16,5 +28,10 @@
 
   &:active {
     color: hsla(0, 0%, 100%, 0.3);
+  }
+
+  &--gray {
+    color: @text-color-main;
+    background-color: hsla(0, 0%, 95%, 1);
   }
 }
