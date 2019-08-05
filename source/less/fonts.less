@@ -1,13 +1,8 @@
 .font-face(@font-family, @filepath, @font-weight, @font-style) {
   @font-face {
     font-family: @font-family;
-    src: url("/fonts/@{filepath}.eot");
-    src: url("/fonts/@{filepath}.eot?#iefix") format("embedded-opentype"),
-      url("/fonts/@{filepath}.otf") format("opentype"),
-      url("/fonts/@{filepath}.svg") format("svg"),
-      url("/fonts/@{filepath}.ttf") format("truetype"),
-      url("/fonts/@{filepath}.woff") format("woff"),
-      url("/fonts/@{filepath}.woff2") format("woff2");
+    src: url("/fonts/@{filepath}.woff2") format("woff2"),
+      url("/fonts/@{filepath}.woff") format("woff");
     font-weight: @font-weight;
     font-style: @font-style;
   }

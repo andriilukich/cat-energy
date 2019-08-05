@@ -13,8 +13,12 @@
   list-style: none;
 }
 
-.soc-nav__item:nth-last-child(n + 2) {
+.soc-nav__item {
   margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .soc-nav__link {
