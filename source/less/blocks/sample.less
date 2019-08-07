@@ -1,10 +1,13 @@
 .sample {
   width: 100%;
-  max-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
-  padding: 17px 20px;
 
   background-color: @bg-gray;
+}
+
+.sample__wrapper-content {
+  padding: 17px 20px 22px;
 }
 
 .sample__title {
@@ -21,7 +24,7 @@
   font-family: "Arial", sans-serif;
 }
 
-.sample__list {
+.sample__results-list {
   display: flex;
   justify-content: space-between;
   align-items: space-between;
@@ -31,7 +34,7 @@
   list-style: none;
 }
 
-.sample__item {
+.sample__results-item {
   display: flex;
   flex-grow: 1;
   flex-shrink: 0;
@@ -83,4 +86,34 @@
   line-height: 1.42;
   color: @text-color-darker;
   text-transform: uppercase;
+}
+
+.sample__wrapper-slider {
+  padding-bottom: 40px;
+}
+
+.sample__photos-list {
+  position:relative;
+  height: 240px;
+  padding-left: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.sample__photos-item {
+  position: absolute;
+  min-width: 320px;
+  min-height: 240px;
+  background-repeat: no-repeat;
+  background-size: 320px 240px;
+
+}
+
+.sample__photos-item--before {
+  background-image: url("../../img/before-mobile@1x.png");
+}
+
+.sample__photos-item--after {
+  background-image: url("../../img/after-mobile@1x.png");
 }

@@ -1,0 +1,46 @@
+.slider__toggle {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin: 35px auto 0;
+}
+
+.slider__button {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  margin: 0 18px;
+
+  background-color: hsla(0, 100%, 100%, 1);
+  border: 1px hsla(0, 0%, 80%, 1) solid;
+  border-radius: 30px;
+
+  &:focuse {
+    outline: 0;
+  }
+}
+
+.slider__swipe {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  display: inline-block;
+  width: 35px;
+  height: 6px;
+
+  font-size: 0;
+  color: transparent;
+
+  background-color: @accent-color;
+  border-radius: 15px;
+
+  &--active {
+    left: 37px;
+  }
+}
+
+.slider__data {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
