@@ -1,5 +1,7 @@
 .offer {
-  background: url("/img/index-background-mobile@1x.jpg") no-repeat 50% top;
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% top;
 }
 
 .offer__container {
@@ -19,6 +21,7 @@
 
   font-size: 36px;
   line-height: 1;
+  font-weight: 400;
 }
 
 .offer__subtitle {
@@ -29,4 +32,54 @@
 
 .offer__img {
   margin: 30px 0 3px;
+}
+
+@media (min-width: @tablet) {
+  .offer {
+    min-width: 768px;
+    min-height: 807px;
+    background-image: url("/img/index-can-tablet@1x.jpg");
+    background-position: 50% bottom;
+  }
+
+  .offer__container {
+    padding: 38px 30px 0;
+  }
+
+  .offer__header {
+    margin-left: 90px;
+    color: @text-color-darker;
+    text-align: left;
+  }
+
+  .offer__header,
+  .offer__btn {
+    margin-left: 90px;
+  }
+
+  .offer__title {
+    width: 420px;
+
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .offer__subtitle {
+    margin: 38px 0 50px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .offer__img {
+    display: none;
+  }
+
+  .offer__btn {
+    width: 245px;
+    padding: 17px 0;
+
+    font-size: 20px;
+    line-height: 1;
+  }
 }
