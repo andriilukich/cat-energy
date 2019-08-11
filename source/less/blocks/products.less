@@ -12,8 +12,31 @@
 
   font-size: 36px;
   line-height: 1.66;
+  font-weight: 400;
   text-align: center;
   color: @text-color-darker;
 
   border-bottom: 1px @border-color solid;
+}
+
+@media (min-width: @tablet) {
+  .products {
+    min-width: 708px;
+    padding: 0 30px;
+    border-bottom: 0;
+  }
+
+  .products__title {
+    margin: 42px 0 156px;
+    padding: 0;
+    text-align: left;
+    font-size: 60px;
+    line-height: 1;
+    border: 0;
+  }
+
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

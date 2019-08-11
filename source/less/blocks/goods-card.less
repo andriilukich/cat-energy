@@ -8,6 +8,7 @@
   margin: 14px 0 16px;
   font-size: 16px;
   line-height: 1;
+  font-weight: 400;
   color: @text-color-darker;
   text-transform: uppercase;
 }
@@ -29,4 +30,47 @@
 
 .goods-card__cell--right {
   text-align: right;
+}
+
+@media (min-width: @tablet) {
+  .goods-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 27px 30px;
+
+    border: 1px @border-color solid;
+
+    &:nth-last-child(n+2) {
+      border-bottom: 0;
+    }
+  }
+
+  .goods-card__title {
+    width: 60%;
+    margin: 0 auto 26px 0;
+    font-size: 20px;
+  }
+
+  .goods-card__table {
+    width: 40%;
+    margin-bottom: 0;
+    text-align: right;
+  }
+
+  .goods-card__cell {
+    font-size: 16px;
+    line-height: 1.25;
+
+    &--left {
+      width: 135px;
+    }
+
+    &--right {
+      width: 55px;
+    }
+  }
+
+  .goods-card__btn {
+    flex-grow: 1;
+  }
 }

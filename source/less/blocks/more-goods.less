@@ -13,6 +13,7 @@
 
   font-size: 24px;
   line-height: 1;
+  font-weight: 400;
   color: @text-color-darker;
 
   border-bottom: 1px @border-color solid;
@@ -58,4 +59,63 @@
   font-size: 16px;
   line-height: 1.25;
   color: #ffffff;
+}
+
+@media (min-width: @tablet) {
+  .more-goods {
+    min-width: 708px;
+    padding: 0 30px 76px;
+  }
+
+  .more-goods__title {
+    margin: 0 0 75px 38px;
+    padding-bottom: 0;
+
+    font-size: 36px;
+    border-bottom: 0;
+
+    &::after {
+      top: 21px;
+      left: 375px;
+
+      width: 328px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: -68px;
+
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: @accent-color;
+    }
+  }
+
+  .more-goods__offer {
+    display: flex;
+    align-items: center;
+    margin-top: 69px;
+    padding-left: 91px;
+    padding-right: 115px;
+    text-align: left;
+
+    background-color: hsla(97, 53%, 47%, 0.3);
+    background-image: url("/img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .more-goods__icon {
+    margin: 70px auto 70px 0;
+  }
+
+  .more-goods__text {
+    width: 170px;
+    margin: 70px 0;
+    padding-bottom: 0;
+  }
 }
