@@ -1,29 +1,37 @@
 .program {
   width: 100%;
-  min-width: 280px;
   margin: 0 auto;
   padding: 11px 20px 17px;
-}
 
-.program__item {
-  margin-bottom: 20px;
+  &__item {
+    margin-bottom: 20px;
 
-  &:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
 @media (min-width: @tablet) {
   .program {
-    min-width: 708px;
     padding: 0 30px;
+
+    &__item {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
+}
 
-  .program__item {
-    margin-bottom: 30px;
+@media (min-width: @desktop) {
+  .program {
+    padding: 40px;
 
-    &:last-child {
-      margin-bottom: 0;
+    &__wrapper {
+      display: flex;
     }
   }
 }

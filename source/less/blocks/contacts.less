@@ -1,25 +1,24 @@
 .contacts {
   width: 100%;
-  min-width: 320px;
   margin: 0 auto;
 
   text-align: center;
 
   background-color: @bg-gray;
-}
 
-.contacts__logo-link {
-  &:hover {
-    opacity: 0.8;
+  &__logo-link {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
-  &:active {
-    opacity: 0.6;
+  &__logo-img {
+    margin: 23px 0 30px;
   }
-}
-
-.contacts__logo-img {
-  margin: 23px 0 30px;
 }
 
 @media (min-width: @tablet) {
@@ -27,10 +26,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 708px;
-  }
 
-  .contacts__logo-img {
-    margin: 0;
+    &__logo-img {
+      margin: 0;
+    }
   }
 }

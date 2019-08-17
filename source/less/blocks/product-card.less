@@ -5,81 +5,82 @@
 
   border-bottom: 1px @border-color solid;
 
+  &:last-child {
+    border-bottom: 0;
+  }
+
   &--show-more {
     flex-direction: column;
     text-align: center;
   }
-}
 
-.product-card__title {
-  width: 75px;
-  margin: 25px 0 20px;
+  &__title {
+    width: 75px;
+    margin: 25px 0 20px;
 
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
-  color: @text-color-darker;
-  text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    color: @text-color-darker;
+    text-transform: uppercase;
 
-  &--show-more {
-    width: auto;
-    margin: 0;
+    &--show-more {
+      width: auto;
+      margin: 0;
+    }
   }
-}
 
-.product-card__wrapper {
-  width: 50%;
-}
+  &__wrapper {
+    width: 50%;
+  }
 
-.product-card__cell {
-  width: 70px;
+  &__cell {
+    width: 70px;
 
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 1.33;
-  color: @text-color-main;
-}
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 1.33;
+    color: @text-color-main;
+  }
 
-.product-card__cell--right {
-  text-align: right;
-}
+  &__cell--right {
+    text-align: right;
+  }
 
-.product-card__btn {
-  margin-top: 20px;
-}
+  &__btn {
+    margin-top: 20px;
+  }
 
-.product-card__icon {
-  margin: 26px 0;
-  width: 30px;
-  height: 30px;
+  &__icon {
+    margin: 26px 0;
+    width: 30px;
+    height: 30px;
 
-  fill: hsla(0, 0%, 13%, 0.2);
-}
+    fill: hsla(0, 0%, 13%, 0.2);
+  }
 
-.product-card__subtitle {
-  margin: 11px 0 24px;
+  &__subtitle {
+    margin: 11px 0 24px;
 
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 1.33;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 1.33;
+  }
 }
 
 @media (min-width: @tablet) {
   .product-card {
     position: relative;
     width: 324px;
-    margin-bottom: 70px;
+    margin: 70px 30px;
+
     padding: 165px 0 40px;
 
     background-color: @bg-gray;
     border-bottom: 0;
 
-    &:nth-child(odd) {
-      margin-left: 60px;
-    }
-
-    &:nth-last-child(n+3) {
-      margin-bottom: 140px;
+    &:last-child {
+      border-bottom: 1px @border-color solid;
     }
 
     &--show-more {
@@ -87,103 +88,89 @@
       background-color: #ffffff;
       border: 1px @border-color solid;
     }
-  }
 
-  .product-card__wrapper {
-    width: 250px;
-    margin: 0 auto;
-  }
-
-  .product-card__title {
-    width: 131px;
-    margin: 0 auto 28px;
-    font-size: 20px;
-    line-height: 1;
-    text-align: center;
-
-    &--show-more {
-      width: 140px;
+    &__wrapper {
+      width: 250px;
       margin: 0 auto;
     }
-  }
 
-  .product-card__subtitle {
-    width: 172px;
-    margin: 28px auto 0;
+    &__title {
+      width: 131px;
+      margin: 0 auto 18px;
+      font-size: 20px;
+      line-height: 1;
+      text-align: center;
 
-    font-size: 16px;
-  }
-
-  .product-card__img {
-    position: absolute;
-    display: block;
-    width: 324px;
-    height: 172px;
-    padding-left: 325px;
-
-    background-repeat: no-repeat;
-
-    &--checken-sm {
-      top: -46px;
-      background: url("/img/chicken-small-tablet@1x.png");
+      &--show-more {
+        width: 140px;
+        margin: 0 auto;
+      }
     }
 
-    &--checken-bg {
-      height: 208px;
-      top: -82px;
-      background: url("/img/chicken-big-tablet@1x.png");
+    &__subtitle {
+      width: 172px;
+      margin: 28px auto 0;
+
+      font-size: 16px;
     }
 
-    &--fish-sm {
-      top: -46px;
-      background: url("/img/fish-small-tablet@1x.png");
+    &__img {
+      display: none;
     }
 
-    &--fish-big {
-      height: 208px;
-      top: -82px;
-      background: url("/img/fish-big-tablet@1x.png");
+    &__table {
+      border-collapse: collapse;
+      width: 250px;
     }
 
-    &--grain-sm {
-      top: -46px;
-      background: url("/img/buckwheat-small-tablet@1x.png");
+    &__cell {
+      font-size: 16px;
+      line-height: 1.25;
+      padding: 9px 0;
+      border-bottom: 1px hsla(0, 0%, 80%, 1) solid;
     }
 
-    &--grain-big {
-      height: 208px;
-      top: -82px;
-      background: url("/img/buckwheat-big-tablet@1x.png");
+    &__btn {
+      width: 249px;
+      padding: 10px 0;
+      margin: 33px auto 0;
+
+      &--show-more {
+        margin: 93px auto -1px;
+      }
     }
 
-    &--rice-sm {
-      top: -46px;
-      background: url("/img/rice-small-tablet@1x.png");
+    &__icon {
+      margin: 55px 0 52px;
+      width: 60px;
+      height: 60px;
     }
   }
+}
 
-  .product-card__table {
-    width: 250px;
-  }
+@media (min-width: @desktop) {
+  .product-card {
+    width: 245px;
+    margin: 70px 40px;
 
-  .product-card__cell {
-    font-size: 16px;
-    line-height: 1;
-  }
-
-  .product-card__btn {
-    width: 249px;
-    padding: 13px 0 12px;
-    margin: 34px auto 0;
-
-    &--show-more {
-      margin-top: 89px;
+    &:first-child {
+      margin-left: 0;
     }
-  }
 
-  .product-card__icon {
-    margin: 55px 0;
-    width: 60px;
-    height: 60px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__wrapper {
+      width: 167px;
+    }
+
+    &__table {
+      width: 167px;
+    }
+
+    &__btn {
+      width: 169px;
+    }
   }
 }

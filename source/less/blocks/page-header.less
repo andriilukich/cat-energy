@@ -15,7 +15,6 @@
 
 @media (min-width: @tablet) {
   .page-header {
-    min-width: 708px;
     height: auto;
     padding: 24px 30px;
 
@@ -24,5 +23,18 @@
 
   .page-header__logo {
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-header {
+    padding: 54px 40px 42px;
+
+    &--position {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
   }
 }

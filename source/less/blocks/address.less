@@ -1,36 +1,61 @@
 .address {
   display: flex;
-}
 
-.address__title {
-  margin: 0;
+  &__title {
+    margin: 0;
 
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
-  color: @text-color-darker;
-  text-transform: uppercase;
-}
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    color: @text-color-darker;
+    text-transform: uppercase;
+  }
 
-.address__coordinates {
-  margin-left: 20px;
-  font-style: normal;
-  line-height: 1.48;
-  font-family: "Arial", sans-serif;
+  &__coordinates {
+    margin-left: 20px;
+    font-style: normal;
+    line-height: 1.48;
+    font-family: "Arial", sans-serif;
+  }
 }
 
 @media (min-width: @tablet) {
-  .address__title {
-    width: 170px;
-    margin-left: 40px;
+  .address {
+    &__title {
+      width: 170px;
+      margin-left: 40px;
 
-    font-size: 20px;
+      font-size: 20px;
+    }
+
+    &__coordinates {
+      width: 170px;
+      margin: 0 40px 0 auto;
+
+      font-size: 16px;
+      line-height: 1.25;
+      text-align: right;
+    }
+
+    &__city {
+      line-height: 3;
+    }
   }
+}
 
-  .address__coordinates {
-    width: 170px;
-    margin: 0 40px 0 auto;
-    font-size: 16px;
-    line-height: 1.25;
+@media (min-width: @desktop) {
+  .address {
+    width: 570px;
+    padding: 66px 76px 54px;
+
+    background-color: #ffffff;
+
+    &__title {
+      margin-left: 0;
+    }
+
+    &__coordinates {
+      margin-right: 0;
+    }
   }
 }
