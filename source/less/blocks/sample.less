@@ -1,232 +1,289 @@
 .sample {
   width: 100%;
-  min-width: 320px;
-  margin: 0 auto;
+  padding: 0 20px;
 
   background-color: @bg-gray;
-}
+  border: 1px transparent solid;
 
-.sample__wrapper {
-  padding: 17px 20px 22px;
-}
+  &__title {
+    margin: 30px 0 34px;
 
-.sample__title {
-  margin: 0;
-
-  font-size: 36px;
-  line-height: 1.66;
-  font-weight: 400;
-  color: @text-color-darker;
-}
-
-.sample__text {
-  margin: 35px 0 0;
-
-  font-family: "Arial", sans-serif;
-}
-
-.sample__results-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.sample__item {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-grow: 1;
-  flex-shrink: 0;
-  align-items: center;
-
-  text-align: center;
-}
-
-.sample__item--right {
-  justify-content: flex-end;
-}
-
-.sample__data {
-  width: 123px;
-  height: auto;
-  padding: 15px 0;
-  margin-right: 0;
-
-  font-size: 24px;
-  line-height: 1;
-  color: @text-color-darker;
-  text-transform: uppercase;
-
-  border: 1px @border-color solid;
-  border-radius: 4px;
-}
-
-.sample__sub-data {
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  z-index: 2;
-
-  width: 88px;
-  padding: 0 5px;
-
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 1;
-  color: @text-color-main;
-
-  background-color: @bg-gray;
-}
-
-.sample__sub-data--left {
-  transform: translateX(-60%);
-}
-
-.sample__sub-data--right {
-  transform: translateX(-40%);
-}
-
-.sample__spent {
-  text-align: center;
-  line-height: 1.42;
-  color: @text-color-darker;
-  text-transform: uppercase;
-}
-
-.sample__slider {
-  margin-top: 19px;
-  padding-bottom: 38px;
-}
-
-.sample__slides {
-  position: relative;
-  width: 100%;
-  min-height: 240px;
-}
-
-.sample__slid {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  min-width: 320px;
-  min-height: 240px;
-
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-.sample__slid--before {
-  background-image: url("/img/before-mobile@1x.png");
-}
-
-.sample__slid--after {
-  background-image: url("/img/after-mobile@1x.png");
-}
-
-.sample__toggle {
-  margin: 35px auto 0;
-}
-
-@media (min-width: @tablet) {
-  .sample {
-    background-color: #ffffff;
+    font-size: 36px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: @text-color-darker;
   }
 
-  .sample__wrapper {
+  &__text {
+    margin: 0 0 27px;
+    font-family: "Arial", sans-serif;
+  }
+
+  &__results-list {
     display: flex;
-    flex-wrap: wrap;
-    min-width: 708px;
-    padding: 0 30px;
-    margin-top: 50px;
-  }
-
-  .sample__title {
-    font-size: 60px;
-    line-height: 1;
-  }
-
-  .sample__text {
-    width: 700px;
-    margin-top: 60px;
-
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .sample__results-list {
-    width: 370px;
-  }
-
-  .sample__data {
-    width: 162px;
-    padding: 20px 0 22px;
-    margin-top: 58px;
-    margin-bottom: 0;
-
-    font-size: 30px;
-    line-height: 1.23;
-  }
-
-  .sample__sub-data {
-    bottom: -5px;
+    justify-content: space-between;
+    width: 280px;
+    margin: 0;
     padding: 0;
 
-    font-size: 14px;
-
-    background-color: #ffffff;
+    list-style: none;
   }
 
-  .sample__sub-data--left {
-    width: 114px;
+  &__item {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
   }
 
-  .sample__sub-data--right {
-    width: 142px;
+  &__data {
+    width: 123px;
+    height: auto;
+    margin: 0;
+    padding: 15px 0;
 
-    transform: translateX(-43%);
-  }
-
-  .sample__spent {
-    width: 180px;
-    margin-top: auto;
-    margin-left: auto;
-
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1;
-    text-align: right;
+    color: @text-color-darker;
+    text-transform: uppercase;
+
+    border: 1px @border-color solid;
+    border-radius: 4px;
   }
 
-  .sample__slider {
-    margin-top: 233px;
-    padding-bottom: 38px;
+  &__sub-data {
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    display: block;
+    width: 88px;
+    padding: 0 5px;
+
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    color: @text-color-main;
 
     background-color: @bg-gray;
   }
 
-  .sample__slides {
-    min-height: 348px;
+  &__spent {
+    margin: 38px 0 0;
+
+    text-align: center;
+    line-height: 1.42;
+    color: @text-color-darker;
+    text-transform: uppercase;
   }
 
-  .sample__slid {
-    top: auto;
-    bottom: 0;
-    min-width: 667px;
-    min-height: 517px;
+  &__slider {
+    position: relative;
+    min-height: 365px;
+    margin: 36px 0 0;
   }
 
-  .sample__slid--before {
-    background-image: url("/img/before-tablet@1x.png");
+  &__slides {
+    position: relative;
   }
 
-  .sample__slid--after {
-    background-image: url("/img/after-tablet@1x.png");
+  &__slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 240px;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    &--before {
+      background-image: url("../img/before-mobile@1x.png");
+    }
+
+    &--after {
+      background-image: url("../img/after-mobile@1x.png");
+    }
   }
 
-  // .sample__toggle {
+  &__toggle {
+    position: absolute;
+    bottom: 39px;
+    left: 50%;
+    transform: translateX(-50%);
 
-  // }
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet) {
+  .sample {
+    padding: 0;
+    background-color: #ffffff;
+
+    border-top: 1px @border-color solid;
+
+    &__title {
+      margin-top: 51px 0 61px;
+      padding: 0 30px;
+      font-size: 60px;
+      line-height: 1;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0 30px;
+      margin-top: 0;
+    }
+
+    &__text {
+      width: 700px;
+      margin: 0;
+
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &__results-list {
+      width: 370px;
+      margin-top: 58px;
+    }
+
+    &__data {
+      width: 162px;
+      padding: 20px 0 22px;
+      margin-bottom: 0;
+
+      font-size: 30px;
+      line-height: 1.23;
+    }
+
+    &__sub-data {
+      bottom: -5px;
+      padding: 0;
+
+      font-size: 14px;
+
+      background-color: #ffffff;
+
+      &--left {
+        width: 114px;
+      }
+
+      &--right {
+        width: 142px;
+      }
+    }
+
+    &__spent {
+      width: 180px;
+      margin-top: 58px;
+      margin-left: auto;
+
+      font-size: 20px;
+      line-height: 1;
+      text-align: right;
+    }
+
+    &__slider {
+      margin-top: 233px;
+      padding-bottom: 76px;
+
+      background-color: @bg-gray;
+    }
+
+    &__slides {
+      min-height: 348px;
+    }
+
+    &__slide {
+      top: auto;
+      bottom: 0;
+      width: auto;
+      min-width: 384px;
+      min-height: 517px;
+
+      &--before {
+        left: 0;
+        background-image: url("../img/before-tablet@1x.png");
+        background-position: right -338px top;
+      }
+
+      &--after {
+        right: 0;
+        background-image: url("../img/after-tablet@1x.png");
+        background-position: left -338px top;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .sample {
+    display: flex;
+    flex-wrap: wrap;
+
+    border-color: transparent;
+
+    &__title {
+      width: 100%;
+      padding: 0 40px;
+      margin: 45px 0 66px;
+    }
+
+    &__wrapper {
+      width: 38%;
+
+      background-color: @bg-gray;
+    }
+
+    &__text {
+      margin-top: 76px;
+    }
+
+    &__results-list {
+      margin-top: 71px;
+    }
+
+    &__data {
+      border-color: hsla(0, 0%, 80%, 1);
+    }
+
+    &__sub-data {
+      background-color: @bg-gray;
+    }
+
+    &__spent {
+      width: 330px;
+      margin: 63px 0 73px;
+
+      text-align: left;
+    }
+
+    &__slider {
+      width: 62%;
+      margin-top: 0;
+    }
+
+    &__slide {
+      top: auto;
+      bottom: 0;
+      min-width: 403px;
+
+      &--before {
+        left: 0;
+        background-image: url("../img/before-desktop@1x.png");
+        background-position: right -338px top;
+      }
+
+      &--after {
+        right: 0;
+        background-image: url("../img/after-desktop@1x.png");
+        background-position: left -338px top;
+      }
+    }
+  }
 }
