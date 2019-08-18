@@ -23,7 +23,7 @@
   margin: auto;
 }
 
-.info-card--weight-loss {
+.info-card__icon--weight-loss {
   width: 35px;
 }
 
@@ -37,6 +37,7 @@
 
   font-size: 24px;
   line-height: 1.54;
+  font-weight: 400;
   color: @text-color-darker;
 }
 
@@ -94,4 +95,103 @@
 
 .info-card__link:active {
   opacity: 0.3;
+}
+
+@media (min-width: @tablet) {
+  .info-card {
+    position: relative;
+    padding: 80px 0 60px 52px;
+
+    &__icon-wrapper {
+      position: absolute;
+      top: 50%;
+      right: 60px;
+      transform: translateY(-50%);
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      width: 375px;
+      margin: 26px 0 51px;
+      padding: 0;
+
+      font-size: 16px;
+      line-height: 1.5;
+
+      border: 0;
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    &__arrow {
+      top: -9px;
+    }
+
+    &__icon--weight-loss {
+      width: 145px;
+      height: auto;
+    }
+
+    &__icon--weight-gain {
+      width: 268px;
+      height: auto;
+      margin-left: -38px;
+      margin-top: 44px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .info-card {
+    width: 570px;
+    margin: 0;
+    padding: 41px 53px 63px 52px;
+
+    &:first-child {
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
+
+    &__icon-wrapper {
+      position: static;
+      width: 100px;
+      height: 100px;
+      transform: none;
+    }
+
+    &__icon--weight-loss {
+      width: 70px;
+      height: auto;
+    }
+
+    &__icon--weight-gain {
+      width: 134px;
+      height: auto;
+      margin-left: -17px;
+      margin-top: 22px;
+    }
+
+    &__title {
+      margin-left: 62px;
+    }
+
+    &__description {
+      width: 100%;
+      margin: 45px 0 36px;
+    }
+  }
 }

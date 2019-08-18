@@ -12,3 +12,29 @@
   display: block;
   padding: 11px 0 15px 20px;
 }
+
+@media (min-width: @tablet) {
+  .page-header {
+    height: auto;
+    padding: 24px 30px;
+
+    border: 0;
+  }
+
+  .page-header__logo {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-header {
+    padding: 54px 40px 42px;
+
+    &--position {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
