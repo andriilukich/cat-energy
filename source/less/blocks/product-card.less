@@ -1,17 +1,22 @@
 .product-card {
   display: flex;
   flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px 25px;
 
   border-bottom: 1px @border-color solid;
 
-  &:last-child {
+  &:nth-last-child(2) {
     border-bottom: 0;
   }
 
   &--show-more {
     flex-direction: column;
     text-align: center;
+
+    border-top: 1px @border-color solid;
+    border-bottom: 0;
   }
 
   &__title {
@@ -72,7 +77,7 @@
   .product-card {
     position: relative;
     width: 324px;
-    margin: 70px 30px;
+    margin: 70px 0;
 
     padding: 165px 0 40px;
 

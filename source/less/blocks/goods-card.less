@@ -3,6 +3,10 @@
 
   border-bottom: 1px @border-color solid;
 
+  &:last-child {
+    border-bottom: 0;
+  }
+
   &__title {
     margin: 14px 0 16px;
     font-size: 16px;
@@ -39,9 +43,10 @@
     padding: 28px 30px;
 
     border: 1px @border-color solid;
+    border-bottom: 0;
 
-    &:nth-last-child(n+2) {
-      border-bottom: 0;
+    &:last-child {
+      border-bottom: 1px @border-color solid;
     }
 
     &__title {
@@ -82,9 +87,9 @@
     border: 0;
     border-top: 1px @border-color solid;
 
-    &:last-child {
-      border-bottom: 1px @border-color solid;
-    }
+    // &:last-child {
+    //   border-bottom: 1px @border-color solid;
+    // }
 
     &__title {
       width: 27%;

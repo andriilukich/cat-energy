@@ -1,19 +1,22 @@
 .products {
-  width: 100%;
   margin: 0 auto;
 
   &__title {
-    margin: 20px 0 0;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 41px;
+    padding-left: 20px;
 
     font-size: 36px;
-    line-height: 1.66;
+    line-height: 1;
     font-weight: 400;
-    text-align: center;
     color: @text-color-darker;
   }
 
   &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     border-top: 1px @border-color solid;
     border-bottom: 1px @border-color solid;
   }
@@ -21,6 +24,9 @@
 
 @media (min-width: @tablet) {
   .products {
+    width: 91%;
+    max-width: 1220px;
+    margin: 0 auto;
     border-bottom: 0;
 
     &__title {
@@ -35,6 +41,7 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      // justify-content: flex-start;
       border: 0;
     }
   }

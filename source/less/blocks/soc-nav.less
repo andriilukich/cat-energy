@@ -1,5 +1,4 @@
 .soc-nav {
-  padding: 22px 0;
   border-top: 1px @border-color solid;
   border-bottom: 1px @border-color solid;
 
@@ -14,7 +13,7 @@
   }
 
   &__item {
-    margin-right: 40px;
+    margin-right: 37px;
 
     &:last-child {
       margin-right: 0;
@@ -22,6 +21,11 @@
   }
 
   &__link {
+    display: flex;
+    width: 22px;
+    height: auto;
+    padding-top: 23px;
+    padding-bottom: 22px;
     font-size: 0;
     color: transparent;
   }
@@ -36,6 +40,8 @@
   }
 
   &__icon {
+    margin: auto;
+
     fill: hsla(0, 0%, 40%, 1);
 
     &--vk {
