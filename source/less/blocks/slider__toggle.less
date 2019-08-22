@@ -38,8 +38,26 @@
   }
 }
 
-.slider__data {
+.slider__btn {
+  padding: 7px 0;
+  font-family: @font-main;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @tablet) {
+  .slider__btn {
+    border-bottom: 1px #b8b8b8 dotted;
+  }
 }

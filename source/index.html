@@ -10,32 +10,30 @@
   <body>
     <header class="page-header page-header--position">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-icon" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="191" height="38">
+        <img class="page-header__logo-icon" src="../img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="191" height="38">
       </a>
-      <button class="nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="main-nav main-nav--active">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active main-nav__link--light main-nav__link--active-light" href="index.html">Главная</a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--light" href="catalog.html">Каталог продукции</a>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--light" href="form.html">Подбор программы</a>
+          <li class="site-list__item">
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
       <section class="offer">
-        <div class="offer__container">
-          <header class="offer__header">
-            <h1 class="offer__title">Функциональное питание для котов</h1>
-            <p class="offer__subtitle">Занялся собой? Займись котом!</p>
-          </header>
+        <div class="offer__wrapper">
+          <h1 class="offer__title">Функциональное питание для котов</h1>
+          <p class="offer__subtitle">Занялся собой? Займись котом!</p>
           <a class="btn offer__btn" href="form.html" >Подобрать программу</a>
         </div>
       </section> <!-- /.offer -->
@@ -46,7 +44,7 @@
           <section class="program__item info-card">
             <header class="info-card__header">
               <div class="info-card__icon-wrapper">
-                <svg class="info-card__icon info-card__icon--weight-loss" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 97" style="enable-background:new 0 0 70 97;" xml:space="preserve">
+                <svg class="info-card__icon info-card__icon--weight-loss" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="49px" viewBox="0 0 70 97" style="enable-background:new 0 0 70 97;" xml:space="preserve">
                   <g>
                     <path
                       d="M54.8,0c-0.1,0-0.3,0-0.4,0c-0.7,0.4-1.1,0.9-1.4,1.6c-0.6,1.1-1,2.3-1.3,3.4c-0.2,0.8-0.7,1.2-1.5,1.3
@@ -72,7 +70,7 @@
           <section class="program__item info-card">
             <header class="info-card__header">
               <div class="info-card__icon-wrapper">
-                <svg class="info-card__icon info-card__icon--weight-gain"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 134 56" style="enable-background:new 0 0 134 56;" xml:space="preserve">
+                <svg class="info-card__icon info-card__icon--weight-gain"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="67px" height="28px" viewBox="0 0 134 56" style="enable-background:new 0 0 134 56;" xml:space="preserve">
                   <g>
                     <path
                       d="M123.1,5.8c1.2-1.9,2.7-3.4,4.5-4.6c1-0.7,1.6-0.7,2.2,0.6c0.8,1.9,1.5,3.9,0.9,6c-0.2,0.8-0.1,1.4,0.4,2.1
@@ -129,35 +127,37 @@
 
       <section class="sample">
         <h2 class="sample__title title">Живой пример</h2>
-        <div class="sample__wrapper">
-          <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <ul class="sample__results-list">
-            <li class="sample__item">
-              <p class="sample__data">5 кг</p>
-              <span class="sample__sub-data sample__sub-data--left">снижение веса</span>
-            </li>
-            <li class="sample__item">
-              <p class="sample__data">60 дней</p>
-              <span class="sample__sub-data sample__sub-data--right">затрачено времени</span>
-            </li>
-          </ul>
-          <p class="sample__spent">Затраты на питание: 15 000 руб.</p>
+        <div class="sample__container">
+          <div class="sample__wrapper-content">
+            <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <ul class="sample__results-list">
+              <li class="sample__item">
+                <p class="sample__data">5 кг</p>
+                <span class="sample__sub-data sample__sub-data--left">снижение веса</span>
+              </li>
+              <li class="sample__item">
+                <p class="sample__data">60 дней</p>
+                <span class="sample__sub-data sample__sub-data--right">затрачено времени</span>
+              </li>
+            </ul>
+            <p class="sample__spent">Затраты на питание: 15 000 руб.</p>
+          </div>
+          <section class="sample__slider slider">
+            <h2 class="visually-hidden">Слайдер</h2>
+            <div class="sample__slides slider__list">
+              <div class="sample__slide sample__slide--before slider__item">
+              </div>
+              <div class="sample__slide sample__slide--after slider__item">
+              </div>
+            </div>
+            <div class="sample__toggle slider__toggle">
+              <button class="slider__btn" type="button">Было</button>
+              <!-- <input class="slider__range" type="range" name="diff" min="1" max="3" value="2" id="myRange"> -->
+              <button class="slider__btn" type="button">Стало</button>
+            </div>
+          </section> <!-- /.slider -->
         </div>
-        <section class="sample__slider slider">
-          <h2 class="visually-hidden">Слайдер</h2>
-          <div class="sample__slides slider__list">
-            <div class="sample__slide sample__slide--before slider__item">
-            </div>
-            <div class="sample__slide sample__slide--after slider__item">
-            </div>
-          </div>
-          <div class="sample__toggle slider__toggle">
-            <span class="slider__data">Было</span>
-            <input class="slider__range" type="range" name="diff" min="1" max="3" value="2" id="myRange">
-            <span class="slider__data">Стало</span>
-          </div>
-        </section> <!-- /.slider -->
       </section> <!-- /.sample -->
     </main>
     <footer class="page-footer">
@@ -215,5 +215,7 @@
         </div> <!-- /.page-footer__copyright -->
       </section> <!-- /.page-footer__contacts -->
     </footer>
+
+    <script src="less/blocks/main-nav.js"></script>
   </body>
 </html>

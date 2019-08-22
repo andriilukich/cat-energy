@@ -1,7 +1,7 @@
 .instruction {
-  width: 100%;
+  width: auto;
   margin: 0 auto;
-  padding: 17px 20px;
+  padding: 17px 20px 0;
 
   &__title {
     margin: 0;
@@ -25,18 +25,16 @@
     align-items: center;
   }
 
-  &__item:last-child {
-    margin-bottom: 0;
-  }
-
   &__icon {
     width: 60px;
     height: 60px;
+    padding: 30px;
     margin-right: 20px;
 
     background-color: hsl(97, 53%, 47%);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-size: 50px 50px;
 
     &--leaf {
       background-image: url("../img/advantage-leaf@1x.png");
@@ -56,7 +54,6 @@
   }
 
   &__text {
-    width: 200px;
     margin: 0;
 
     font-family: "Arial", sans-serif;
@@ -65,10 +62,13 @@
 
 @media (min-width: @tablet) {
   .instruction {
-    padding: 0 30px;
-    margin: 50px auto 0;
+    width: 92.18%;
+    max-width: 1220px;
+    padding: 0 -30px;
+    margin-top: 50px;
 
     &__title {
+      margin-bottom: 41px;
       font-size: 60px;
       line-height: 1;
     }
@@ -76,34 +76,20 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
-
-      margin: 60px 0 0;
+      justify-content: space-between;
+      margin: 0;
     }
 
     &__item {
       position: relative;
       display: block;
-      width: 339px;
-      margin: 0 0 140px;
-
-      &:nth-child(3) {
-        margin-bottom: 0;
-        padding-bottom: 105px;
-      }
-
-      &:nth-child(4) {
-        margin-bottom: 0;
-        padding-bottom: 105px;
-      }
-
-      &:nth-child(even) {
-        margin-left: 30px;
-      }
+      width: 324px;
+      margin-top: 32px;
+      margin-bottom: 106px;
 
       &::after {
         position: absolute;
         top: -40px;
-        left: 126px;
         z-index: 1;
         display: block;
 
@@ -114,18 +100,22 @@
 
       &:first-child::after {
         content: "1";
+        left: 126px;
       }
 
       &:nth-child(2)::after {
         content: "2";
+        left: 124px;
       }
 
       &:nth-child(3)::after {
         content: "3";
+        left: 128px;
       }
 
       &:last-child::after {
         content: "4";
+        left: 128px;
       }
     }
 
@@ -148,25 +138,10 @@
 
 @media (min-width: @desktop) {
   .instruction {
-    padding: 0 40px 40px;
-    margin: 40px 0 45px;
+    margin-top: 82px;
 
     &__item {
-      width: 241px;
-      margin: 0 40px;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:nth-child(3) {
-        padding-bottom: 0;
-      }
-
-      &:last-child {
-        margin-right: 0;
-        padding-bottom: 0;
-      }
+      width: 25%;
     }
   }
 }

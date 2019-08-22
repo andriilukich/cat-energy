@@ -1,6 +1,4 @@
 .program {
-  width: 100%;
-  margin: 0 auto;
   padding: 11px 20px 17px;
 
   &__item {
@@ -14,7 +12,10 @@
 
 @media (min-width: @tablet) {
   .program {
-    padding: 0 30px;
+    width: 92.18%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
 
     &__item {
       margin-bottom: 30px;
@@ -27,11 +28,7 @@
 }
 
 @media (min-width: @desktop) {
-  .program {
-    padding: 40px;
-
-    &__wrapper {
-      display: flex;
-    }
+  .program__wrapper {
+    display: flex;
   }
 }
