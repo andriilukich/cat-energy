@@ -1,4 +1,5 @@
 .goods-card {
+  margin: 0 auto;
   padding-bottom: 17px;
 
   border-bottom: 1px @border-color solid;
@@ -8,7 +9,7 @@
   }
 
   &__title {
-    margin: 14px 0 16px;
+    margin: 14px 0 15px;
     font-size: 16px;
     line-height: 1;
     font-weight: 400;
@@ -17,17 +18,14 @@
   }
 
   &__table {
-    margin-bottom: 14px;
-  }
-
-  &__row {
     width: 100%;
+    margin-bottom: 14px;
+    border-collapse: collapse;
   }
 
   &__cell {
-    width: 140px;
-
     font-family: "Arial", sans-serif;
+    font-size: 12px;
     line-height: 1;
   }
 
@@ -40,7 +38,9 @@
   .goods-card {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
     padding: 28px 30px;
+    padding-bottom: 27px;
 
     border: 1px @border-color solid;
     border-bottom: 0;
@@ -51,7 +51,7 @@
 
     &__title {
       width: 60%;
-      margin: 0 auto 26px 0;
+      margin: 0;
       font-size: 20px;
     }
 
@@ -63,19 +63,15 @@
 
     &__cell {
       font-size: 16px;
-      line-height: 1.25;
-
-      &--left {
-        width: 135px;
-      }
 
       &--right {
-        width: 55px;
+        width: 96px;
       }
     }
 
     &__btn {
       flex-grow: 1;
+      margin-top: 24px;
     }
   }
 }
@@ -107,7 +103,7 @@
 
     &__btn {
       width: 27%;
-      padding: 10px 0;
+      margin-top: 0;
     }
   }
 }

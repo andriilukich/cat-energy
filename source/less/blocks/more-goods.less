@@ -6,7 +6,7 @@
   &__title {
     position: relative;
 
-    margin: 30px 0;
+    margin: 31px 0;
 
     font-size: 24px;
     line-height: 1;
@@ -29,7 +29,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
     border-top: 1px @border-color solid;
     border-bottom: 1px @border-color solid;
   }
@@ -42,13 +42,18 @@
     background-image: url("../img/gift-photo-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left top;
+    // background-position: left top;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
+    }
   }
 
   &__icon {
     width: 55px;
     height: 60px;
-    margin: 65px 0;
+    margin-top: 65px;
+    margin-bottom: 62px;
 
     fill: #ffffff;
   }
@@ -67,9 +72,8 @@
 
 @media (min-width: @tablet) {
   .more-goods {
-    width: 91%;
+    width: 92%;
     max-width: 1220px;
-    margin: 0 auto;
     padding: 0;
     margin-bottom: 76px;
 
@@ -79,11 +83,10 @@
       padding-left: 37px;
 
       font-size: 36px;
-      border-bottom: 0;
 
       &::after {
         top: 21px;
-        right: -35px;
+        right: -31px;
 
         width: 328px;
       }
@@ -115,11 +118,11 @@
       padding-right: 115px;
       text-align: left;
 
-      background-color: hsla(97, 53%, 47%, 0.3);
       background-image: url("../img/gift-photo-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
+      }
     }
 
     &__icon {
@@ -163,10 +166,15 @@
     &__offer {
       flex-wrap: wrap;
       width: 245px;
-      margin: 0 0 0 auto;
+      margin: 0;
+      margin-left: auto;
       padding: 0 38px;
 
       background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/gift-photo-desktop@2x.jpg");
+      }
     }
 
     &__icon {

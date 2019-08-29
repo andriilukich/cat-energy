@@ -1,7 +1,14 @@
 .address {
-  display: flex;
+  &--color-gray {
+    background-color: @bg-gray;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
 
   &__title {
+    width: 50%;
     margin: 0;
 
     font-size: 16px;
@@ -12,7 +19,8 @@
   }
 
   &__coordinates {
-    margin-left: 20px;
+    width: 50%;
+
     font-style: normal;
     line-height: 1.48;
     font-family: "Arial", sans-serif;
@@ -21,24 +29,31 @@
 
 @media (min-width: @tablet) {
   .address {
-    width: 91%;
-    max-width: 1220px;
-    padding: 0;
+    &__wrapper {
+      width: 92%;
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
 
     &__title {
       width: 170px;
-      margin-left: 40px;
 
       font-size: 20px;
     }
 
     &__coordinates {
       width: 170px;
-      margin: 0 40px 0 auto;
+      margin-left: auto;
 
       font-size: 16px;
       line-height: 1.25;
       text-align: right;
+    }
+
+    &__city {
+      display: inline-block;
+      margin-top: 20px;
     }
   }
 }
@@ -49,6 +64,12 @@
     padding: 66px 76px 54px;
 
     background-color: #ffffff;
+
+    &__wrapper {
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
 
     &__title {
       margin-left: 0;
