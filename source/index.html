@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header page-header--position">
@@ -171,8 +175,10 @@
     </main>
     <footer class="page-footer">
       <section class="page-footer__address address">
-        <h4 class="address__title">приглашаем к сотрудничеству дилеров!</h4>
-        <address class="address__coordinates">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="address__wrapper">
+          <h4 class="address__title">приглашаем</br> к сотрудничеству дилеров!</h4>
+          <address class="address__coordinates">ул. Большая Конюшенная, д. 19/8<span class="address__city">Санкт-Петербург</span></address>
+        </div>
       </section> <!-- /.page-footer__address -->
       <section class="page-footer__map" id="googleMap">
         <h2 class="visually-hidden">Карта</h2>
