@@ -3,7 +3,7 @@
 
   &__title {
     margin-top: 30px;
-    margin-bottom: 41px;
+    margin-bottom: 37px;
     padding-left: 20px;
 
     font-size: 36px;
@@ -20,18 +20,29 @@
     border-top: 1px @border-color solid;
     border-bottom: 1px @border-color solid;
   }
+
+  &__item {
+    width: 320px;
+    margin: 0 auto;
+
+    border-bottom: 1px @border-color solid;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
 }
 
 @media (min-width: @tablet) {
   .products {
-    width: 91%;
+    width: 92%;
     max-width: 1220px;
     margin: 0 auto;
     border-bottom: 0;
 
     &__title {
       margin: 42px 0 86px;
-      padding: 0 30px;
+      padding-left: 30px;
       text-align: left;
       font-size: 60px;
       line-height: 1;
@@ -39,9 +50,6 @@
     }
 
     &__list {
-      display: flex;
-      flex-wrap: wrap;
-      // justify-content: flex-start;
       border: 0;
     }
   }
@@ -49,10 +57,10 @@
 
 @media (min-width: @desktop) {
   .products {
-    padding: 0;
-
     &__title {
-      padding-left: 40px;
+      margin-top: 31px;
+      margin-bottom: 97px;
+      padding-left: 0;
     }
   }
 }

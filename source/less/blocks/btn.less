@@ -1,11 +1,11 @@
 .btn {
   display: block;
   width: 280px;
-  padding: 15px 0;
+  padding: 12px 0;
 
   font-family: @font-main;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1;
   text-align: center;
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
@@ -14,21 +14,31 @@
   background-color: @accent-color;
   border: 0;
 
+  &:hover,
   &:focus {
-    outline: none;
     background-color: hsl(97, 57%, 43%);
-  }
 
-  &:hover {
-    background-color: hsl(97, 57%, 43%);
+    outline-color: hsl(97, 57%, 43%);
   }
 
   &:active {
-    color: hsla(0, 0%, 100%, 0.3);
+    color: hsla(0, 100%, 100%, 0.3);
+    background-color: #5eaa2f;
   }
 
   &--gray {
     color: @text-color-main;
-    background-color: hsla(0, 0%, 95%, 1);
+    background-color: #f2f2f2;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+
+      outline-color: #ebebeb;
+    }
+
+    &:active {
+      color: hsla(0, 0%, 27%, 0.3);
+    }
   }
 }
