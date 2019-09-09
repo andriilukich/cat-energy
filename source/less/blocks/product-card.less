@@ -1,7 +1,7 @@
 .product-card {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 20px 20px;
+  padding: 0 20px 24px;
 
   &--show-more {
     flex-direction: column;
@@ -10,8 +10,8 @@
 
   &__title {
     width: 75px;
-    margin-top: 24px;
-    margin-bottom: 18px;
+    margin-top: 21px;
+    margin-bottom: 14px;
 
     font-size: 16px;
     line-height: 1.25;
@@ -34,6 +34,10 @@
     border-collapse: collapse;
   }
 
+  &__row:nth-child(n+2) td {
+    padding-top: 3px;
+  }
+
   &__cell {
     width: 70px;
 
@@ -47,17 +51,18 @@
     text-align: right;
   }
 
+  &__btn {
+    margin-top: -3px;
+  }
+
   &__icon {
     margin: 26px 0;
-    width: 30px;
-    height: 30px;
-
-    fill: hsla(0, 0%, 13%, 0.2);
+    margin-bottom: 22px;
   }
 
   &__subtitle {
     margin-top: 11px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 
     font-family: "Arial", sans-serif;
     font-size: 12px;
@@ -70,7 +75,6 @@
     position: relative;
     width: 324px;
     margin: 70px 0;
-
     padding: 0;
 
     background-color: @bg-gray;
@@ -78,6 +82,7 @@
 
     &:last-child {
       border-bottom: 1px @border-color solid;
+      // margin-bottom:
     }
 
     &--show-more {
@@ -89,13 +94,13 @@
     &__wrapper {
       width: 249px;
       margin: 0 auto;
-      margin-top: 166px;
+      margin-top: 163px;
     }
 
     &__title {
       width: 131px;
       margin: 0 auto;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
       font-size: 20px;
       line-height: 1;
       text-align: center;
@@ -108,7 +113,7 @@
 
     &__subtitle {
       width: 172px;
-      margin: 28px auto 0;
+      margin: 23px auto 0;
 
       font-size: 16px;
     }
@@ -117,12 +122,17 @@
       position: absolute;
       right: 0;
       left: 0;
-      bottom: 311px;
+      bottom: 306px;
       z-index: 100;
     }
 
     &__table {
       width: 100%;
+    }
+
+    &__row:nth-child(n+2) td {
+      padding-top: 7px;
+      padding-bottom: 8px;
     }
 
     &__cell {
@@ -138,13 +148,13 @@
       margin: 33px auto 40px;
 
       &--show-more {
-        margin-top: 70px;
+        margin-top: 83px;
         margin-bottom: -1px;
       }
     }
 
     &__icon {
-      margin: 55px 0 52px;
+      margin: 54px 0 46px;
       width: 60px;
       height: 60px;
     }
@@ -154,10 +164,15 @@
 @media (min-width: @desktop) {
   .product-card {
     width: 245px;
-    margin: 71px 0;
+    margin-top: 71px;
+    // margin-bottom: 70px;
 
     &__wrapper {
       width: 169px;
+    }
+
+    &__img {
+      bottom: 304px;
     }
 
     &__table {
