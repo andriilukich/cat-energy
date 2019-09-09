@@ -2,14 +2,52 @@
   text-align: center;
 
   &__wrapper {
-    padding: 0 20px;
+    padding: 0 19px;
   }
 
   &__link {
-    display: inline-block;
+    color: #666666;
 
-    font-size: 0;
-    color: transparent;
+    &--logo {
+      display: flex;
+    }
+
+    &--logo img {
+      margin: 0 auto;
+      margin-top: 39px;
+      margin-bottom: 31px;
+    }
+
+    &--soc {
+      display: flex;
+      height: 62px;
+      width: 25px;
+      margin-right: 31px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &--soc svg {
+      margin: auto;
+    }
+
+    &--academy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+      margin-bottom: 13px;
+
+      font-family: "Arial", sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    // &--academy svg {
+    //   margin-right: -5px;
+    // }
 
     &:hover {
       opacity: 0.8;
@@ -18,22 +56,6 @@
     &:active {
       opacity: 0.6;
     }
-
-    &--soc {
-      display: flex;
-      height: 62px;
-      width: 22px;
-      margin-right: 31px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  &__logo {
-    margin-top: 39px;
-    margin-bottom: 31px;
   }
 
   &__social {
@@ -42,16 +64,6 @@
     align-items: center;
     border-top: 1px @border-color solid;
     border-bottom: 1px @border-color solid;
-  }
-
-  &__icon {
-    margin: auto;
-    fill: hsla(0, 0%, 40%, 1);
-  }
-
-  &__copyright {
-    margin-top: 14px;
-    margin-bottom: 13px;
   }
 }
 
@@ -62,26 +74,48 @@
       justify-content: space-between;
       width: 92%;
       max-width: 1220px;
-      margin: 0 auto;
-      margin-top: 50px;
-      margin-bottom: 49px;
+      margin: 47px auto;
       padding: 0;
     }
 
-    &__link--logo {
-      display: flex;
-    }
+    &__link {
+      &--logo img {
+        margin: auto;
+      }
 
-    &__logo {
-      margin: 0;
-    }
+      &--soc {
+        width: auto;
+        height: auto;
+        margin-right: 29px;
+      }
 
-    &__link--soc {
-      height: auto;
+      &--academy {
+        width: 171px;
+        margin: 0;
+        margin-right: -8px;
+      }
     }
 
     &__social {
+      width: 104px;
+      justify-content: space-between;
       border: 0;
+    }
+
+    &__icon {
+      height: auto;
+
+      &--vk {
+        width: 30px;
+      }
+
+      &--insta {
+        width: 23px;
+      }
+
+      &--fb {
+        width: 14px;
+      }
     }
   }
 }

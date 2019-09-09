@@ -1,10 +1,12 @@
 .info-card {
-  padding: 22px;
+  padding: 20px;
+  padding-top: 23px;
   background-color: @bg-gray;
 }
 
 .info-card__header {
   display: flex;
+  margin-left: 2px;
 
   align-items: center;
 }
@@ -13,7 +15,7 @@
   width: 50px;
   height: 50px;
 
-  background: @accent-color;
+  background-color: @accent-color;
   border-radius: 50%;
 }
 
@@ -33,17 +35,19 @@
 }
 
 .info-card__title {
-  margin: 0 0 0 20px;
+  margin: 0;
+  margin-left: 19px;
 
   font-size: 24px;
   line-height: 1.54;
   font-weight: 400;
   color: @text-color-darker;
+  text-transform: uppercase;
 }
 
 .info-card__description {
-  margin: 25px 0 20px;
-  padding-bottom: 22px;
+  margin: 22px 0 19px;
+  padding-bottom: 20px;
 
   font-family: "Arial", sans-serif;
 
@@ -51,6 +55,7 @@
 }
 
 .info-card__link {
+  position: relative;
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
@@ -58,7 +63,10 @@
 }
 
 .info-card__arrow {
-  position: relative;
+  position: absolute;
+  top: 11px;
+  right: -29px;
+  z-index: 1;
 
   display: inline-block;
   width: 17px;
@@ -100,16 +108,20 @@
 @media (min-width: @tablet) {
   .info-card {
     position: relative;
-    padding: 80px 0 60px 52px;
+    padding: 78px 0 60px 52px;
 
     &__icon-wrapper {
       position: absolute;
       top: 50%;
-      right: 60px;
-      transform: translateY(-50%);
+      right: 61px;
+      transform: translateY(-47%);
 
       width: 200px;
       height: 200px;
+    }
+
+    &__header {
+      margin: 0;
     }
 
     &__title {
@@ -121,14 +133,18 @@
     }
 
     &__description {
-      width: 375px;
-      margin: 26px 0 51px;
+      width: 372px;
+      margin: 24px 0 56px;
       padding: 0;
 
       font-size: 16px;
       line-height: 1.5;
 
       border: 0;
+
+      &--narrow {
+        width: 340px;
+      }
     }
 
     &__link {
@@ -137,19 +153,21 @@
     }
 
     &__arrow {
-      top: -9px;
+      top: 14px;
+      right: -40px;
     }
 
     &__icon--weight-loss {
-      width: 145px;
+      width: 140px;
       height: auto;
+      margin-top: -12px;
     }
 
     &__icon--weight-gain {
       width: 268px;
       height: auto;
-      margin-left: -38px;
-      margin-top: 44px;
+      margin-left: -34px;
+      margin-top: 43px;
     }
   }
 }
@@ -194,6 +212,11 @@
     &__description {
       width: 100%;
       margin: 45px 0 36px;
+    }
+
+    &__arrow {
+      top: 10px;
+      right: -42px;
     }
   }
 }
