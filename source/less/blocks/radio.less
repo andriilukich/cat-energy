@@ -1,0 +1,80 @@
+
+.radio {
+  margin: 27px 0;
+
+  &__button {
+    position: relative;
+    display: block;
+    padding-left: 45px;
+    margin-bottom: 27px;
+
+    cursor: pointer;
+    user-select: none;
+
+    &:hover .radio__checkmark {
+      border-color: #bababa;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .radio__checkmark::after {
+      display: block;
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border: 1px  #cdcdcd solid;
+    border-radius: 50%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: @accent-color;
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+  .radio {
+    margin: 33px 0;
+    margin-bottom: 35px;
+
+    &__button {
+      padding-left: 59px;
+      margin-bottom: 33px;
+    }
+
+    &__checkmark {
+      top: -9px;
+
+      width: 40px;
+      height: 40px;
+
+      &::after {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

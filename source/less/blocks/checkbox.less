@@ -1,0 +1,106 @@
+.checkbox {
+  margin-top: 7px;
+
+  &__button {
+    display: block;
+    position: relative;
+    padding-left: 46px;
+    margin-bottom: 27px;
+    cursor: pointer;
+    user-select: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--milk {
+      margin-bottom: 25px;
+    }
+
+    &:hover .checkmark {
+      background-color: #cccccc;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:hover ~ .checkbox__checkmark {
+      border-color: #bababa;
+    }
+
+    &:checked ~ .checkbox__checkmark::after {
+      display: block;
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border: 1px #cdcdcd solid;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+
+      left: 9px;
+      top: 1px;
+      width: 11px;
+      height: 20px;
+      border: 1px solid @accent-color;
+      border-width: 0 1px 1px 0;
+      transform: rotate(42deg);
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+  .checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__button {
+      width: 285px;
+      padding-left: 59px;
+      margin-bottom: 52px;
+    }
+
+    &__button:last-child {
+      margin-bottom: 52px;
+    }
+
+    &__checkmark {
+      top: -9px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__checkmark::after {
+      left: 15px;
+      top: 5px;
+      width: 12px;
+      height: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .checkbox {
+    width: 100%;
+
+    &__button {
+      width: 20.08%;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -68,7 +68,7 @@
         position: absolute;
         right: 0;
         left: 0;
-        bottom: 7px;
+        bottom: 2px;
         height: 2px;
         background-color: @accent-color;
       }
@@ -77,8 +77,12 @@
 }
 
 @media (min-width: @desktop) {
-  .site-list a {
-    font-size: 20px;
-    line-height: 1.2;
+  .site-list__item {
+    margin-right: 34px;
+
+    a {
+      font-size: 20px;
+      line-height: 1.2;
+    }
   }
 }
