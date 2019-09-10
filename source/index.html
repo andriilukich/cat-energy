@@ -110,55 +110,57 @@
       <section class="sample">
         <h2 class="sample__title title">Живой пример</h2>
         <div class="sample__container">
-          <div class="sample__wrapper-content">
-            <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
-            <ul class="sample__results-list">
-              <li class="sample__item">
-                <p class="sample__data">5 кг</p>
-                <span class="sample__sub-data sample__sub-data--left">снижение веса</span>
-              </li>
-              <li class="sample__item">
-                <p class="sample__data">60 дней</p>
-                <span class="sample__sub-data sample__sub-data--right">затрачено времени</span>
-              </li>
-            </ul>
-            <p class="sample__spent">Затраты на питание: <span class="sample__price">15 000 руб.</span></p>
+          <div class="sample__wrapper">
+            <div class="sample__content">
+              <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <ul class="sample__results-list">
+                <li class="sample__item">
+                  <p class="sample__data">5 кг</p>
+                  <span class="sample__sub-data sample__sub-data--left">снижение веса</span>
+                </li>
+                <li class="sample__item">
+                  <p class="sample__data">60 дней</p>
+                  <span class="sample__sub-data sample__sub-data--right">затрачено времени</span>
+                </li>
+              </ul>
+              <p class="sample__spent">Затраты на питание: <span class="sample__price">15 000 руб.</span></p>
+            </div>
+            <article class="sample__slider slider">
+              <h2 class="visually-hidden">Слайдер</h2>
+              <div class="sample__slides slider__list">
+                <div class="sample__slide slider__item">
+                  <div class="sample__picture sample__picture--before">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, before-mobile@2x.webp 2x">
+                      <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                      <img src="img/before-mobile@1x.png" srcset="before-mobile@2x.png 2x" alt="Кот до диеты">
+                    </picture>
+                  </div>
+                </div>
+                <div class="sample__slide sample__slide--gray slider__item">
+                  <div class="sample__picture sample__picture--after">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, after-mobile@2x.webp 2x">
+                      <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                      <img src="img/after-mobile@1x.png" srcset="after-mobile@2x.png 2x" alt="Кот после диеты">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="sample__toggle slider__toggle">
+                <button class="slider__btn" type="button">Было</button>
+                <!-- <input class="slider__range" type="range" name="diff" min="1" max="3" value="2" id="myRange"> -->
+                <button class="slider__btn" type="button">Стало</button>
+              </div>
+            </article> <!-- /.slider -->
           </div>
-          <section class="sample__slider slider">
-            <h2 class="visually-hidden">Слайдер</h2>
-            <div class="sample__slides slider__list">
-              <div class="sample__slide slider__item">
-                <div class="sample__picture sample__picture--before">
-                  <picture>
-                    <source type="image/webp" maedia="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, before-mobile@2x.webp 2x">
-                    <source maedia="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                    <img src="img/before-mobile@1x.png" srcset="before-mobile@2x.png 2x" alt="Кот до диеты">
-                  </picture>
-                </div>
-              </div>
-              <div class="sample__slide sample__slide--gray slider__item">
-                <div class="sample__picture sample__picture--after">
-                  <picture>
-                    <source type="image/webp" maedia="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, after-mobile@2x.webp 2x">
-                    <source maedia="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                    <img src="img/after-mobile@1x.png" srcset="after-mobile@2x.png 2x" alt="Кот после диеты">
-                  </picture>
-                </div>
-              </div>
-            </div>
-            <div class="sample__toggle slider__toggle">
-              <button class="slider__btn" type="button">Было</button>
-              <!-- <input class="slider__range" type="range" name="diff" min="1" max="3" value="2" id="myRange"> -->
-              <button class="slider__btn" type="button">Стало</button>
-            </div>
-          </section> <!-- /.slider -->
         </div>
       </section> <!-- /.sample -->
     </main>
@@ -180,26 +182,26 @@
             <img src="img/logo-footer.svg" alt="Логотип Кэт Энерджи" width="128" height="24">
           </a>
           <nav class="contacts__social">
-            <a class="contacts__link contacts__link--soc" href="https://vk.com/htmlacademy" aria-lable="Переход на страницу HTML Academy ВКонтакте">
+            <a class="contacts__link contacts__link--soc" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <svg class="contacts__icon contacts__icon--vk" width="22" height="12">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
-            <a class="contacts__link contacts__link--soc" href="https://www.instagram.com/htmlacademy" aria-lable="Переход на страницу HTML Academy Insagram">
+            <a class="contacts__link contacts__link--soc" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Мы в Инстаграме</span>
               <svg class="contacts__icon contacts__icon--insta" width="16" height="16">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
-            <a class="contacts__link contacts__link--soc" href="https://www.facebook.com/htmlacademy" aria-lable="Переход на страницу HTML Academy Facebook">
+            <a class="contacts__link contacts__link--soc" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Мы в Фейсбуке</span>
               <svg class="contacts__icon contacts__icon--fb" width="10" height="19">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </nav>
-          <a class="contacts__link contacts__link--academy" href="https://htmlacademy.ru/intensive/adaptive" aria-lable="Профессиональный онлайн‑курс HTML и CSS">
+          <a class="contacts__link contacts__link--academy" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
             <svg width="40" height="51" role="img">
                 <use xlink:href="#htmlacademy"></use>
