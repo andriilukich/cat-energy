@@ -90,15 +90,13 @@ gulp.task("copy", function () {
   "source/js/**",
   "source/*.ico"
   ], {
-  base: "source"
+    base: "source"
   })
   .pipe(gulp.dest("build"));
- });
-
- gulp.task("clean", function () {
+});
+gulp.task("clean", function () {
   return del("build");
- });
-
+});
 gulp.task("build", gulp.series(
   "clean",
   "copy",
