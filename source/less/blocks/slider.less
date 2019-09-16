@@ -1,0 +1,222 @@
+.slider {
+  margin-top: 36px;
+  border-bottom: 1px transparent solid;
+
+
+  &__slides {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__slide {
+    overflow: hidden;
+
+    &--before {
+      width: 320px;
+      flex-shrink: 1;
+    }
+
+    &--after {
+      width: 0;
+      flex-shrink: 1;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+    width: 196px;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 28px;
+  }
+
+  &__range {
+    position: relative;
+    width: 84px;
+    height: 14px;
+    margin-left: 17px;
+
+    background-color: hsla(0, 100%, 100%, 1);
+    border: 1px #cdcdcd solid;
+    border-radius: 30px;
+  }
+
+  &__control {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    display: inline-block;
+    width: 35px;
+    height: 6px;
+
+    font-size: 0;
+    color: transparent;
+
+    background-color: @accent-color;
+    border-radius: 15px;
+
+    &--active {
+      left: 37px;
+    }
+  }
+
+  &__btn {
+    padding: 7px 0;
+    font-family: @font-main;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+  .slider {
+    position: relative;
+    margin-top: 255px;
+
+    &__slides {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 461px;
+      overflow: visible;
+    }
+
+    &__slide {
+      width: 50%;
+      overflow: visible;
+
+      &--before {
+        background-color: #f2f2f2;
+      }
+
+      &--after {
+        background-color: #eaeaea;
+      }
+    }
+
+    &__picture {
+      position: relative;
+      top: -170px;
+      height: 517px;
+      width: 100%;
+      overflow: hidden;
+
+      picture {
+        position: absolute;
+        top: 0;
+      }
+
+      &--before picture {
+        right: -352px;
+      }
+
+      &--after picture {
+        left: -338px;
+      }
+    }
+
+    &__toggle {
+      position: absolute;
+      left: 50%;
+      bottom: 68px;
+      transform: translateX(-50%);
+      width: 568px;
+      margin: 0;
+    }
+
+    &__btn {
+      padding: 0;
+      padding-bottom: 3px;
+      font-size: 20px;
+      border-bottom: 1px #b8b8b8 dotted;
+    }
+
+    &__range {
+      width: 428px;
+      height: 6px;
+      margin-bottom: 3px;
+      margin-left: 22px;
+
+      border: 0;
+      background-color: #dcdcdc;
+    }
+
+    &__control {
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      width: 34px;
+      height: 34px;
+      background-color: #ffffff;
+      border: 1px #cdcdcd solid;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.15);
+    }
+
+    &__control:hover {
+      box-shadow: 0 3px 5px hsla(0, 0%, 0%, 0.25);
+    }
+
+    &__control:active {
+      border-width: 2px;
+      border-color: @accent-color;
+      box-shadow: 0 4px 5px hsla(0, 0%, 0%, 0.3);
+    }
+
+    &__control::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      width: 8px;
+      height: 8px;
+      background-color: @accent-color;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .slider {
+    width: 50%;
+    margin-top: 0;
+
+    &__slide {
+      width: 325px;
+
+      &--after {
+        flex-grow: 1;
+      }
+    }
+
+    &__picture {
+      top: -190px;
+
+      &--before picture {
+        right: -325px;
+      }
+
+      &--after picture {
+        left: -365px;
+      }
+    }
+
+    &__toggle {
+      bottom: 67px;
+      left: 324px;
+    }
+  }
+}

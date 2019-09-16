@@ -85,34 +85,6 @@
     color: @text-color-darker;
     text-transform: uppercase;
   }
-
-  // Slider
-  &__slider {
-    margin-top: 36px;
-    padding-bottom: 29px;
-  }
-
-  &__slides {
-    display: flex;
-  }
-
-  &__slide {
-    width: 320px;
-    margin: 0 auto;
-  }
-
-  &__picture {
-    width: 100%;
-
-    &--after {
-      width: 0;
-    }
-  }
-
-  &__toggle {
-    margin: 0 auto;
-    margin-top: 22px;
-  }
 }
 
 @media (min-width: @tablet) {
@@ -133,9 +105,8 @@
 
     &__content {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       align-items: center;
-
       width: 92%;
       max-width: 1220px;
       margin: 0 auto;
@@ -147,6 +118,12 @@
 
       font-size: 16px;
       line-height: 1.5;
+    }
+
+    &__stats {
+      display: flex;
+      align-items: center;
+      width: 708px;
     }
 
     &__results-list {
@@ -195,54 +172,10 @@
       display: inline-block;
       margin-top: 10px;
     }
-
-    // Slider
-    &__slider {
-      margin-top: 255px;
-    }
-
-    &__slides {
-      display: flex;
-      justify-content: center;
-    }
-
-    &__slide {
-      position: relative;
-      width: 100%;
-
-      &--before {
-        background-color: #f2f2f2;
-        position: relative;
-        right: 338px;
-        max-width: 677px;
-      }
-
-      &--after {
-        display: block;
-        background-color: #eaeaea;
-      }
-
-      &__picture {
-        position: absolute;
-        top: -227px;
-        width: 345px;
-
-        overflow: hidden;
-      }
-
-      &--after img {
-        position: relative;
-        left: -272px;
-        max-width: 545px;
-      }
-    }
-
-    &__toggle {
-      margin-bottom: 38px;
-    }
   }
 }
 
+// try
 @media (min-width: @desktop) {
   .sample {
     border: 0;
@@ -253,29 +186,31 @@
     }
 
     &__container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
+      width: 100%;
       background-color: @bg-gray;
     }
 
     &__wrapper {
-      width: 93.84%;
-      max-width: 1220px;
-      margin: 0 auto;
       display: flex;
+      justify-content: center;
     }
 
     &__content {
-      width: 50%;
+      align-items: flex-start;
+      width: 46.92%;
       max-width: 610px;
       margin: 0;
+      margin-left: auto;
     }
 
     &__text {
       width: 435px;
       margin-top: 72px;
+    }
+
+    &__stats {
+      flex-wrap: wrap;
+      width: 435px;
     }
 
     &__results-list {
@@ -299,18 +234,6 @@
 
     &__price {
       margin-left: 59px;
-    }
-
-    &__slider {
-      margin-top: 0;
-    }
-
-    &__slides {
-      margin-top: 0;
-    }
-
-    &__slide {
-      width: 50%;
     }
   }
 }
